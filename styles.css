@@ -1,0 +1,647 @@
+/* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    margin: auto;
+
+}
+
+body {
+    /*background-color: #1b2838; /* Color de fondo para toda la página */
+    background: linear-gradient(90deg, rgba(37,81,133,1) 0%, rgba(27,40,56,1) 30%, rgba(27,40,56,1) 50%, rgba(27,40,56,1) 70%, rgba(37,81,133,1) 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+    justify-content: space-between;
+}
+
+
+
+
+/* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR */
+
+.navbar{
+    justify-content: flex-start;
+    /* background-color: #131313;  */
+    background-image: linear-gradient(90deg, rgb(62, 103, 150) 11.38%, rgb(58, 119, 177) 25.23%, rgb(15, 33, 110) 100%);/* Aplica un degradado de color de fondo */
+    z-index: 2000;
+    width: 100%;
+    height: 10%;
+
+}
+
+.logo {
+    display: flex;
+    width: 60px;
+    margin-left: 20px;
+}
+
+.divNav1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbarLI {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbarLI a {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+
+.nav-link {
+    font-size: 18px;
+    font-family: roboto;
+}
+
+
+.dropdown-item{
+    width: auto;
+}
+
+.dropdown-item, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    float: none;
+    background-color: #696969;
+    color: white;
+
+}
+
+.dropdown-menu {
+    border: 2px solid #131313;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0); /* Agrega un sombreado al menú desplegable */
+    width: auto;
+}
+
+.show {
+    width: 50%;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    text-decoration: underline; /* Subraya el texto al hacer hover */
+    font-weight: bold; /* Aplica negrita al texto al hacer hover */
+    background-color: transparent;
+    color: white;
+    text-underline-offset: 0.2em;
+}
+
+
+.botonBusqueda {
+    border: 2px solid rgb(17, 109, 17);
+}
+
+.my-lg-0{
+    margin-right: 30px;
+}
+
+.divNav3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Ajusta el tamaño máximo de la barra de búsqueda según sea necesario */
+}
+.input-group-text {
+    border: none; /* Elimina el borde */
+    background-color: transparent; /* Establece el fondo como transparente */
+    box-shadow: none; /* Elimina la sombra */
+}
+
+.input-group-text:hover {
+    background-color: transparent; /* Establece el fondo como transparente en hover */
+}
+
+
+
+
+/* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY */
+
+
+
+.h1temp {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: roboto;
+}
+
+.container-banner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%; /* Tamaño de pantalla completa */
+    height: 40ch;
+    overflow: hidden; /* Para que la imagen no desborde del contenedor */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bannerimg {
+
+    width: 100vw;
+    height: 100%;
+
+}
+.color-destacado {
+    margin-right: 0.5em; /* Ajusta el margen derecho para separar "STEAM" y "ARGENTINA" */
+    color: rgb(62, 103, 150);
+    font-weight: bold;
+    font-family: roboto;
+}
+
+#carouselExampleIndicators {
+    width: 60%;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.botonIzq{
+    font-size: 54px;
+    color: #ffffff;
+    background: rgb(27,40,56);
+    background: linear-gradient(90deg, rgba(27,40,56,1) 0%, rgba(32,60,93,0.8631827731092436) 50%, rgba(37,81,133,0) 100%);
+    margin-right: -8px;
+}
+
+.buttonLeft {
+    background-color: transparent;
+            border: none;             /* Quita el borde predeterminado */
+            color: rgba(0, 0, 0, 0);             /* Cambia el color del texto/ícono */
+            text-align: center;       /* Centra el texto/ícono */
+            text-decoration: none;    /* Quita la subrayado del texto */
+            display: inline-block;    /* Alinea el botón como un bloque en línea */
+            cursor: pointer;          /* Cambia el cursor al pasar sobre el botón */
+            margin-bottom: 80px;
+
+}
+
+.botonIzq:hover {
+    background: rgb(58,113,180);
+    background: linear-gradient(90deg, rgba(58,113,180,1) 0%, rgba(50,97,154,1) 46%, rgba(36,69,108,0.5130427170868348) 83%, rgba(32,60,93,0.8631827731092436) 100%);
+}
+
+
+/*  asdtestboton derecho   */
+
+.botonDer{
+    font-size: 54px;
+    color: #ffffff;
+    background: rgb(27,40,56);
+    background: linear-gradient(270deg, rgba(27,40,56,1) 0%, rgba(32,60,93,0.8631827731092436) 50%, rgba(37,81,133,0) 100%);
+    margin-left: -8px;
+}
+
+.buttonRight {
+    background-color: transparent;
+            border: none;             /* Quita el borde predeterminado */
+            color: rgba(0, 0, 0, 0);             /* Cambia el color del texto/ícono */
+            text-align: center;       /* Centra el texto/ícono */
+            text-decoration: none;    /* Quita la subrayado del texto */
+            display: inline-block;    /* Alinea el botón como un bloque en línea */
+            cursor: pointer;          /* Cambia el cursor al pasar sobre el botón */
+            margin-bottom: 80px;
+
+}
+
+.botonDer:hover {
+    background: rgb(58,113,180);
+    background: linear-gradient(270deg, rgba(58,113,180,1) 0%, rgba(50,97,154,1) 46%, rgba(36,69,108,0.5130427170868348) 83%, rgba(32,60,93,0.8631827731092436) 100%);
+}
+
+.carousel-inner {
+   margin: 0;
+  
+}
+
+
+.carousel-indicators {
+    position: relative;
+}
+
+
+.ofetxt {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: stretch; /* Centra los elementos verticalmente */
+
+
+}
+
+.ofeimg {
+    border: solid 4px #131313;
+}
+
+.ofeimg img {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Hacer que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor sin deformarse */
+}
+
+.ofeimg2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ofeimg2 img {
+margin: 10px;
+width: 40%;
+border: solid 3px #0c0c0c;
+
+}
+
+
+.txtofe {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: roboto;
+    font-size: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
+.divofe {
+    width: 500px;
+    background-image: url("./img/Slider/5642571.jpg");
+    background-size: cover;
+    background-color: #11161b;
+}
+
+.agreofe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+}
+
+.ofecarrito{
+    width: 150px;
+}
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+
+.containerGrid {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.imgGrid {
+    width: 70%;
+    border: solid 4px #131313;
+}
+
+
+.imgGrid {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ofertasabajo h2{
+    color: white;
+}
+
+.ofertastexto{
+    display: flex;
+    font-size: 28px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+
+
+.ofertasprecio{
+    color: white;
+    margin-top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+
+.carrousel2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner2 {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+.ofertasEspeciales {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./img/grid/bkgrsss.png);
+    background-size: cover; /* Ajusta según sea necesario */
+    background-position: center; /* Ajusta según sea necesario */
+    background-repeat: no-repeat;
+    width: auto;
+}
+
+/* CARTAS *//* CARTAS *//* CARTAS *//* CARTAS *//* CARTAS *//* CARTAS *//* CARTAS *//* CARTAS */
+
+
+.cartas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50rem;
+    margin-bottom: 50px;
+ 
+
+
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    
+}
+
+.cardcomplete {
+    background-color: #2b3742;
+}
+
+
+
+
+/* card PC SLAV info *//* card PC SLAV info *//* card PC SLAV info *//* card PC SLAV info *//* card PC SLAV info *//* card PC SLAV info *//* card PC SLAV info *//* card PC SLAV info */
+
+.cartas-pc-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cartas-pc-titulo{
+    color: white;
+}
+
+.cartas-pc-1 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.card-pc {
+    margin-left: 30px;
+    width: 200px;
+    padding: 5px;
+}
+
+
+
+
+/* card insight info *//* card insight info *//* card insight info *//* card insight info *//* card insight info *//* card insight info *//* card insight info *//* card insight info */
+
+
+
+
+.cartas-contenderor-main {
+    background-image: url(./img/Cards/bkgrond.png);
+    background-size: cover; /* Ajusta según sea necesario */
+    background-position: center; /* Ajusta según sea necesario */
+    background-repeat: no-repeat;
+    width: auto;
+    margin-top: 100px;
+
+}
+
+
+
+
+
+.card-body{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card-text-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-txt {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.card-txtabajo {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 11px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+
+.contenedorCartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+.gameimg {
+    width: 184px;
+}
+
+
+.body-txt-der {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.body-txt-price-discount{
+    font-size: 14px;
+    color: rgb(199, 199, 199);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.body-txt-price{
+
+    color: white;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-right: 60px;
+
+}
+
+.discount-txt {
+
+    color: #01ff38;
+    background-color: #265f15;
+    display: flex;
+    font-weight: bold;
+
+
+}
+
+.txt-derecha{   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 30px;
+
+}
+
+.body-txt-price-discount {
+
+    margin-right: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
+
+
+.footerAll { 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #131313;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+
+    margin-top: 30px;
+}
+
+.footerCpy {
+    color: white;
+}
+
+.footerCompleto { 
+    display: flex;
+    align-items: center;
+}
+
+.footerPag { 
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+}
+
+#iconsFooter a  {
+    width: 20px; /* Establece el ancho del icono */
+    height: 20px; /* Establece la altura del icono */
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#iconsFooter svg  {
+    width: 20px; /* Establece el ancho del icono */
+    height: 20px; /* Establece la altura del icono */
+
+}
+
+.iconsFooter {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+
+
+/* consultas foro *//* consultas foro *//* consultas foro *//* consultas foro *//* consultas foro */
+
+
+
+.consultas-forum{
+    display: flex;
+    flex-direction: column;
+    background-color: #38495a;
+    width: 500px;
+    border: solid 2px black;
+    width: 50%;
+}
+
+.mb-3 {
+margin: 30px;
+}
