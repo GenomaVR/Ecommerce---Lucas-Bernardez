@@ -439,14 +439,20 @@ border: solid 3px #0c0c0c;
     display: flex;
     flex-direction: row;
 
+
 }
 
 .card-pc {
     margin-left: 30px;
     width: 200px;
     padding: 5px;
+    background-color: #131313;
 }
 
+.card-text:last-child {
+    color: white;
+    margin: 10px;
+}
 
 
 
@@ -644,4 +650,186 @@ border: solid 3px #0c0c0c;
 
 .mb-3 {
 margin: 30px;
+}
+
+
+/* RESONSIVE *//* RESONSIVE *//* RESONSIVE *//* RESONSIVE *//* RESONSIVE *//* RESONSIVE *//* RESONSIVE *//* RESONSIVE */
+
+@media (max-width: 10000px) {
+
+    .hamburguesanav {
+        display: none;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1282px) {
+    .bannerimg {
+        width: 100%;
+        height: 80%;
+    }
+    .hamburguesanav {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .bannerimg {
+        width: 992px;
+        height: 60%;
+    }
+    .navbar-complete {
+        width: 80%;
+    }
+
+    .ofeimg {
+        display: none;
+    }
+
+    .cartas {
+        width: 600px;
+    }
+
+
+
+
+
+    .hamburguesanav {
+        display: none;
+        justify-content: flex-start;
+        /* background-color: #131313;  */
+        background-image: linear-gradient(90deg, rgb(62, 103, 150) 11.38%, rgb(58, 119, 177) 25.23%, rgb(15, 33, 110) 100%);/* Aplica un degradado de color de fondo */
+        z-index: 2000;
+        width: 100%;
+        height: 10%;
+    
+    }
+
+    .boton-hamburguesa-nav{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .dropdownMenu2burga {
+        margin-bottom: 10px;
+        background-color: #38495a;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .dropdownMenu2burga a {
+        margin-left: 10px;
+        width: 200px;
+    }
+
+    .burgaboton {
+        padding: 0.5rem 1rem; /* Ajusta el padding del botón */
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente del botón */
+    }
+
+
+    .show {
+        width: 100%;
+    }
+
+
+}
+
+
+
+@media (max-width: 840px) {
+
+    .divNav1 {
+
+        display: none;
+
+    }
+
+    .divNav3 { 
+        display: none;
+    }
+
+    .col2 {
+        display: none;
+    }
+
+    .hamburguesanav {
+        display: flex;
+
+
+    }
+
+}
+
+@media (max-width: 674px) {
+
+    .card-body {
+        display: none;
+    }
+
+    .body-txt-der {
+        margin-left: 30px;
+    }
+
+    .cartas {
+        width: 400px;
+    }
+
+    .body-txt-price {
+        font-size: 14px;
+    }
+    
+    .txt-derecha s {
+        font-size: 11px;
+    }
+
+    .footertxt {
+
+        display: none;
+
+
+    }
+
+    #iconsFooter {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 586px) {
+    .bannerimg {
+        width: 576px;
+        height: 40%;
+    }
+
+    .divofe {
+        display: none;
+    }
+
+    .ofeimg {
+        display: flex;
+    }
+
+    .container-banner {
+ 
+        height: 50%;
+    }
+
+
+
 }
