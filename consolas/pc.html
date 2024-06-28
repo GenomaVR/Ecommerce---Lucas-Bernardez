@@ -19,56 +19,87 @@
 
 <body>
 
-    <header>
+  <header>
 
-        <nav class="navbar navbar-dark">
-            
-            <div class="d-flex justify-content-between align-items-center w-100">
-                <div class="divNav1">
-                    
-                    <a class="navbar-brand" href="../index.html"><img class="logo"  src="../img/nav/logo.png" alt=""></a>
-                    <div class="divNav2">
-                        <ul class="navbar-nav mr-auto navbarLI">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="../index.html">Inicio <span class="sr-only"></span></a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Consolas
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="../consolas/pc.html">PC</a>
-                                    <a class="dropdown-item" href="../consolas/psn.html">PSN</a>
-                                    <a class="dropdown-item" href="../consolas/nintendo.html">NINTENDO</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../contactanos.html">Contactanos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../registro.html">Registrate</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="divNav3">
-                    <form class="form-inline my-2 my-lg-0">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="search-icon">
-                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-
-                            </span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </nav>
+    <nav class="navbar navbar-dark">
         
 
-    </header>
+
+
+
+
+        <div class="d-flex justify-content-between align-items-center w-100 navbar-complete">
+
+            <div class="hamburguesanav">
+                <div class="container-fluid boton-hamburguesa-nav">
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle burgaboton" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-list"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdownMenu2burga" aria-labelledby="dropdownMenu2">
+                            <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li><a class="nav-link" href="../consolas/pc.html">PC</a></li>
+                            <li><a class="nav-link" href="../consolas/psn.html">PSN</a></li>
+                            <li><a class="nav-link" href="../consolas/nintendo.html">Nintendo</a></li>
+                            <li><a class="nav-link" href="../contactanos.html">Contactanos</a></li>
+                            <li><a class="nav-link" href="../registro.html">Registrate</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <a class="navbar-brand" href="./index.html"><img class="logo" src="../img/nav/logo.png" alt=""></a>
+            </div>
+
+
+
+
+            <div class="divNav1">
+                <a class="navbar-brand" href="../index.html"><img class="logo"  src="../img/nav/logo.png" alt=""></a>
+                <div class="divNav2">
+                    <ul class="navbar-nav mr-auto navbarLI">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Inicio <span class="sr-only"></span></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Consolas
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../consolas/pc.html">PC</a>
+                                <a class="dropdown-item" href="../consolas/psn.html">PSN</a>
+                                <a class="dropdown-item" href="../consolas/nintendo.html">NINTENDO</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../registro.html">Registrate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divNav3">
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="search-icon">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+
+                        </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+    </nav>
+    
+
+</header>
 
 
     <main>
@@ -80,87 +111,120 @@
         <div class="cartas-pc-container">
 
              <div class="cartas-pc-titulo">
-                Explora nuestra colección de juegos digitales de pc!
+                JUEGOS EN PC DIGITALES!
              </div>
 
              <div class="cartas-pc-1">
                 <div class="card card-pc">
                     <img class="card-img-top" src="../pcimgs/MetroRedux.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="ofertasprecio">Metro Redux PC</div>
+                      <div class="ofertasprecio">ARS $60.000</div>
+                      <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
+
                     </div>
                   </div>
                   <div class="card card-pc">
                     <img class="card-img-top" src="../pcimgs/Plague tale.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="ofertasprecio">Plage Tale Requiem</div>
+                      <div class="ofertasprecio">ARS $50.000</div>
+                      <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
                     </div>
                   </div>
                   <div class="card card-pc">
                     <img class="card-img-top" src="../pcimgs/SeunasSaga.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="ofertasprecio">Seuna's Saga II</div>
+                      <div class="ofertasprecio">ARS $70.000</div>
+                      <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
                     </div>
                   </div>
                   <div class="card card-pc">
-                    <img class="card-img-top" src="../pcimgs/Sims4.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../pcimgs/Alan-Wake-2-Deluxe-Edition-193x288.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="ofertasprecio">Alan Wake II</div>
+                      <div class="ofertasprecio">ARS $75.000</div>
+                      <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
                     </div>
                   </div>
              </div>
+
+
              <div class="cartas-pc-1">
+              <div class="card card-pc">
+                  <img class="card-img-top" src="../pcimgs/Assassins-Creed-Valhalla-193x288.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <div class="ofertasprecio">Assasin's Creed Valhalla</div>
+                    <div class="ofertasprecio">ARS $60.000</div>
+                    <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
+
+                  </div>
+                </div>
                 <div class="card card-pc">
-                    <img class="card-img-top" src="../pcimgs/MetroRedux.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                  <img class="card-img-top" src="../pcimgs/Baldurs-Gate-3-193x288.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <div class="ofertasprecio">Baldurs Gate 3</div>
+                    <div class="ofertasprecio">ARS $60.000</div>
+                    <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
                   </div>
-                  <div class="card card-pc">
-                    <img class="card-img-top" src="../pcimgs/Plague tale.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card card-pc">
-                    <img class="card-img-top" src="../pcimgs/SeunasSaga.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card card-pc">
-                    <img class="card-img-top" src="../pcimgs/Sims4.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-             </div>
-             <div class="cartas-pc-1">
+                </div>
                 <div class="card card-pc">
-                    <img class="card-img-top" src="../pcimgs/MetroRedux.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                  <img class="card-img-top" src="../pcimgs/Forza-Horizon-5-Premium-Edition-193x288.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <div class="ofertasprecio">Seuna's Saga II</div>
+                    <div class="ofertasprecio">ARS $70.000</div>
+                    <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
                   </div>
-                  <div class="card card-pc">
-                    <img class="card-img-top" src="../pcimgs/Plague tale.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                </div>
+                <div class="card card-pc">
+                  <img class="card-img-top" src="../pcimgs/Grand-Theft-Auto-The-Trilogy-The-Definitive-Edition-193x288.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <div class="ofertasprecio">GTA Trilogy</div>
+                    <div class="ofertasprecio">ARS $45.000</div>
+                    <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
                   </div>
-                  <div class="card card-pc">
-                    <img class="card-img-top" src="../pcimgs/SeunasSaga.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card card-pc">
-                    <img class="card-img-top" src="../pcimgs/Sims4.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-             </div>
+                </div>
+           </div>
+
+
+           <div class="cartas-pc-1">
+            <div class="card card-pc">
+                <img class="card-img-top" src="../pcimgs/Mafia-Edicion-Definitiva-193x288.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="ofertasprecio">Mafia Definitive Edition</div>
+                  <div class="ofertasprecio">ARS $30.000</div>
+                  <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
+
+                </div>
+              </div>
+              <div class="card card-pc">
+                <img class="card-img-top" src="../pcimgs/Marvels-SpiderMan-Miles-Morales-193x288.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="ofertasprecio">Spider-Man Miles Morales</div>
+                  <div class="ofertasprecio">ARS $50.000</div>
+                  <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
+                </div>
+              </div>
+              <div class="card card-pc">
+                <img class="card-img-top" src="../pcimgs/The-Invincible-193x288.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="ofertasprecio">The Invincible</div>
+                  <div class="ofertasprecio">ARS $50.000</div>
+                  <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
+                </div>
+              </div>
+              <div class="card card-pc">
+                <img class="card-img-top" src="../pcimgs/Monster-Hunter-Rise-Deluxe-Edition-193x288.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="ofertasprecio">Monster Hunter Rise</div>
+                  <div class="ofertasprecio">ARS $19.000</div>
+                  <div><a href="#"><img class="ofecarrito" src="../img/Slider/carrito.png" alt=""></a></div>
+                </div>
+              </div>
+         </div>
+
+
 
          </div>
         

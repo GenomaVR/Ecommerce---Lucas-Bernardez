@@ -23,16 +23,44 @@
 
         <nav class="navbar navbar-dark">
             
-            <div class="d-flex justify-content-between align-items-center w-100">
+    
+    
+    
+    
+    
+            <div class="d-flex justify-content-between align-items-center w-100 navbar-complete">
+    
+                <div class="hamburguesanav">
+                    <div class="container-fluid boton-hamburguesa-nav">
+    
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle burgaboton" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-list"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdownMenu2burga" aria-labelledby="dropdownMenu2">
+                                <li><a class="nav-link" href="./index.html">Inicio</a></li>
+                                <li><a class="nav-link" href="./consolas/pc.html">PC</a></li>
+                                <li><a class="nav-link" href="./consolas/psn.html">PSN</a></li>
+                                <li><a class="nav-link" href="./consolas/nintendo.html">Nintendo</a></li>
+                                <li><a class="nav-link" href="./contactanos.html">Contactanos</a></li>
+                                <li><a class="nav-link" href="./registro.html">Registrate</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <a class="navbar-brand" href="./index.html"><img class="logo" src="../img/nav/logo.png" alt=""></a>
+                </div>
+    
+    
+    
+    
                 <div class="divNav1">
-                    
                     <a class="navbar-brand" href="./index.html"><img class="logo"  src="./img/nav/logo.png" alt=""></a>
                     <div class="divNav2">
                         <ul class="navbar-nav mr-auto navbarLI">
                             <li class="nav-item active">
                                 <a class="nav-link" href="./index.html">Inicio <span class="sr-only"></span></a>
                             </li>
-
+    
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Consolas
@@ -58,41 +86,46 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="search-icon">
                                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-
+    
                             </span>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
+    
+    
+    
         </nav>
         
-
+    
     </header>
 
 
     <main>
-
-
-        <div class="consultas-forum">
-
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-
+        <div class="container mt-5">
+            <h2 class="titulo-form">ENVIA TU MENSAJE!</h2>
+            <form class="form-container">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" placeholder="Asunto del mensaje" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="5" placeholder="Envianos tu consulta o pregunta por stock de juegos!" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+            </form>
         </div>
-
-        
-
-
-
     </main>
-
 
     <footer class="text-center text-lg-start footerAll">
         <!-- Grid container -->

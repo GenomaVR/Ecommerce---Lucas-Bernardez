@@ -162,7 +162,6 @@ body {
     justify-content: center;
     align-items: flex-end;
     width: 100%; /* Tamaño de pantalla completa */
-    height: 40ch;
     overflow: hidden; /* Para que la imagen no desborde del contenedor */
     align-items: center;
     margin-bottom: 20px;
@@ -171,7 +170,7 @@ body {
 .bannerimg {
 
     width: 100vw;
-    height: 100%;
+    height: 500px;
 
 }
 .color-destacado {
@@ -428,23 +427,37 @@ border: solid 3px #0c0c0c;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
 }
 
 .cartas-pc-titulo{
     color: white;
+    font-size: 48PX;
+    font-weight: bolder;
+    text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
 }
 
 .cartas-pc-1 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
 
 }
 
 .card-pc {
     margin-left: 30px;
-    width: 200px;
+    width:250px;
+    padding: 5px;
+    background-color: #131313;
+}
+
+.card-psn {
+    margin-left: 30px;
+    width:250px;
+    height: 450px;
     padding: 5px;
     background-color: #131313;
 }
@@ -477,8 +490,12 @@ border: solid 3px #0c0c0c;
 
 .card-body{
     padding: 0;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
 }
 
 
@@ -639,18 +656,46 @@ border: solid 3px #0c0c0c;
 
 
 
-.consultas-forum{
+.form-container{
     display: flex;
     flex-direction: column;
     background-color: #38495a;
-    width: 500px;
     border: solid 2px black;
-    width: 50%;
+}
+
+.form-container, label {
+
+    color: white;
+
+}
+
+.titulo-form{
+    color: white;
+    text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
+}
+
+
+
+.btn-enviar {
+
+    width: 20%;
+    align-self: center; /* Centrado verticalmente */
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 .mb-3 {
 margin: 30px;
+
 }
+
+
+/*regitro*//*regitro*//*regitro*//*regitro*//*regitro*//*regitro*/
+
+
+
+
 
 
 /* RESONSIVE *//* RESONSIVE *//* RESONSIVE *//* RESONSIVE *//* RESONSIVE *//* RESONSIVE *//* RESONSIVE *//* RESONSIVE */
@@ -747,6 +792,11 @@ margin: 30px;
 
 
 @media (max-width: 840px) {
+
+    .bannerimg {
+        width: 750px;
+        height: 60%;
+    }
 
     .divNav1 {
 
